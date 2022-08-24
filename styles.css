@@ -5,7 +5,7 @@
 
 html {
     scroll-behavior: smooth;
-    background: #f2f2f2;
+    background: #f0f0f2;
 }
 
 body {
@@ -16,15 +16,22 @@ h1 {
     font-weight: 600;
 }
 
-.section {
+.intro {
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
+    text-align: center;
 }
 
-.intro {
-    text-align: center;
+.intro>* {
+    margin: 0.5rem;
+}
+
+.intro>img {
+    margin-bottom: 1rem;
+    width: 20rem;
 }
 
 .scroll {
@@ -36,4 +43,9 @@ h1 {
 
 .scroll:hover {
     cursor: pointer;
+}
+
+.section {
+    height: 100vh;
+    background: white;
 }
