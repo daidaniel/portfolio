@@ -3,6 +3,11 @@
     padding: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+    background: #f2f2f2;
+}
+
 body {
     font-family: 'Inter';
 }
@@ -11,10 +16,24 @@ h1 {
     font-weight: 600;
 }
 
-.hero {
+.section {
     height: 100vh;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+}
+
+.intro {
     text-align: center;
+}
+
+.scroll {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 1.5rem;
+}
+
+.scroll:hover {
+    cursor: pointer;
 }
